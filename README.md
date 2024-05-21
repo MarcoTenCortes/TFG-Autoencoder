@@ -33,8 +33,8 @@ Los resultados obtenidos demuestran que los autoencoders son capaces de distingu
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/tu_usuario/tu_repositorio.git
-    cd tu_repositorio
+    git clone https://github.com/MarcoTenCortes/TFG-Autoencoder.git
+    cd TFG-Autoencoder
     ```
 
 2. Instala las dependencias:
