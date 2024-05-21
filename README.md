@@ -57,7 +57,7 @@ Si deseas contribuir a este proyecto, por favor crea un fork del repositorio y e
 
 ## Autor
 
-**Marco Tenorio Cortés** - [marco.tenorio@example.com](mailto:marcotencortes@hotmail.com)
+**Marco Tenorio Cortés** - [marcotencortes@hotmail.com](mailto:marcotencortes@hotmail.com)
 
 ## Agradecimientos
 
