@@ -16,7 +16,7 @@ Los resultados obtenidos demuestran que los autoencoders son capaces de distingu
 - `data/`: Fichero excel para su prueba en la predicción del autoencoder en la demo anteriormente mencionada.
 - `models/`: Modelos entrenados preparados para su importación.
 - `docs/`: Documentación del proyecto, incluyendo el informe final del TFG.
-- 'requirements.txt': Fichero con las dependencias necesarias.
+- `requirements.txt`: Fichero con las dependencias necesarias.
 
 ## Cómo Empezar
 
