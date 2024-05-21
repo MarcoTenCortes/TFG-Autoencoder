@@ -1,5 +1,3 @@
-# TFG-Autoencoder
-TFG - Ingeniería Informática - Tecnologías Informáticas
 # Autoencoders y Error de Reconstrucción para Detectar Muestras de Cáncer
 
 Este repositorio contiene el código y la documentación del Trabajo de Fin de Grado (TFG) titulado "Autoencoders y Error de Reconstrucción para Detectar Muestras de Cáncer" realizado por Marco Tenorio Cortés para obtener el título de Grado en Ingeniería Informática - Tecnologías Informáticas en la Universidad de Sevilla.
