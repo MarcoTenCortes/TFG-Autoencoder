@@ -52,6 +52,8 @@ Los resultados obtenidos demuestran que los autoencoders son capaces de distingu
    Realiza diferentes modificaciones que veas necesarias para comprobar como varia el modelo.
 3. **Uso del autoencoder**
    En caso de que quieras utilizar el autoencoder de manera externa puedes importar el fichero que encontraras en /models
+4. **Demo técnica**
+   Usa el contenido de la carpeta "Demo" para iniciar el servicio Flask, donde puedes probar el modelo para realizar diferentes predicciones.
 
 ## Contribuciones
 
