@@ -13,6 +13,7 @@ Los resultados obtenidos demuestran que los autoencoders son capaces de distingu
 ## Estructura del Repositorio
 
 - `notebooks/`: Contiene los notebooks de Jupyter utilizados durante el desarrollo del proyecto.
+- `demo/`: Ficheros relevantes sobre la estructura del servicio Flask.
 - `data/`: Fichero excel para su prueba en la predicción del autoencoder en la demo anteriormente mencionada.
 - `models/`: Modelos entrenados preparados para su importación.
 - `docs/`: Documentación del proyecto, incluyendo el informe final del TFG.
@@ -28,6 +29,7 @@ Los resultados obtenidos demuestran que los autoencoders son capaces de distingu
 - Scikit-Learn
 - Pandas
 - Numpy
+- Flask
 
 ### Instalación
 
