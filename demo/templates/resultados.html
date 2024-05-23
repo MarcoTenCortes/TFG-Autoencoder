@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+    <title>Resultados de la Predicción</title>
+</head>
+<body>
+<div class="resultados-container">
+    <h1>Resultados de la Predicción</h1>
+    {% for resultado in resultados %}
+        <p>Resultado {{ loop.index }}: <strong>{{ resultado }}</strong></p>
+    {% endfor %}
+    <a href="/">Volver a la página principal</a>
+</div>
+</body>
+</html>

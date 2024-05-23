@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Cáncer de Mama</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .tabcontent {
+            display: none;
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="form-containers">    
+<h1>Introduzca los atributos para la predicción de cáncer de mama</h1>
+    <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'formulario')">Formulario</button>
+        <button class="tablinks" onclick="openTab(event, 'excel')">Subir Excel</button>
+    </div>
+
+    <div id="formulario" class="tabcontent active">
+        <form action="/predict" method="post">
+            <!-- Medias de las características -->
+            <div>
+                <label for="radius_mean">Radio medio:</label>
+                <input type="text" id="radius_mean" name="radius_mean" required>
+            </div>
+            <div>
+                <label for="texture_mean">Textura media:</label>
+                <input type="text" id="texture_mean" name="texture_mean" required>
+            </div>
+            <div>
+                <label for="perimeter_mean">Perímetro medio:</label>
+                <input type="text" id="perimeter_mean" name="perimeter_mean" required>
+            </div>
+            <div>
+                <label for="area_mean">Área media:</label>
+                <input type="text" id="area_mean" name="area_mean" required>
+            </div>
+            <div>
+                <label for="smoothness_mean">Suavidad media:</label>
+                <input type="text" id="smoothness_mean" name="smoothness_mean" required>
+            </div>
+            <div>
+                <label for="compactness_mean">Compacidad media:</label>
+                <input type="text" id="compactness_mean" name="compactness_mean" required>
+            </div>
+            <div>
+                <label for="concavity_mean">Concavidad media:</label>
+                <input type="text" id="concavity_mean" name="concavity_mean" required>
+            </div>
+            <div>
+                <label for="concave_points_mean">Puntos de concavidad medios:</label>
+                <input type="text" id="concave_points_mean" name="concave_points_mean" required>
+            </div>
+            <div>
+                <label for="symmetry_mean">Simetría media:</label>
+                <input type="text" id="symmetry_mean" name="symmetry_mean" required>
+            </div>
+            <div>
+                <label for="radius_se">Radio SE:</label>
+                <input type="text" id="radius_se" name="radius_se" required>
+            </div>
+            <div>
+                <label for="texture_se">Textura SE:</label>
+                <input type="text" id="texture_se" name="texture_se" required>
+            </div>
+            <div>
+                <label for="perimeter_se">Perímetro SE:</label>
+                <input type="text" id="perimeter_se" name="perimeter_se" required>
+            </div>
+            <div>
+                <label for="area_se">Área SE:</label>
+                <input type="text" id="area_se" name="area_se" required>
+            </div>
+            <div>
+                <label for="smoothness_se">Suavidad SE:</label>
+                <input type="text" id="smoothness_se" name="smoothness_se" required>
+            </div>
+            <div>
+                <label for="compactness_se">Compacidad SE:</label>
+                <input type="text" id="compactness_se" name="compactness_se" required>
+            </div>
+            <div>
+                <label for="concavity_se">Concavidad SE:</label>
+                <input type="text" id="concavity_se" name="concavity_se" required>
+            </div>
+            <div>
+                <label for="concave_points_se">Puntos de concavidad SE:</label>
+                <input type="text" id="concave_points_se" name="concave_points_se" required>
+            </div>
+            <div>
+                <label for="symmetry_se">Simetría SE:</label>
+                <input type="text" id="symmetry_se" name="symmetry_se" required>
+            </div>
+            <div>
+                <label for="fractal_dimension_se">Dimensión fractal SE:</label>
+                <input type="text" id="fractal_dimension_se" name="fractal_dimension_se" required>
+            </div>
+            <div>
+                <label for="radius_worst">Radio peor:</label>
+                <input type="text" id="radius_worst" name="radius_worst" required>
+            </div>
+            <div>
+                <label for="texture_worst">Textura peor:</label>
+                <input type="text" id="texture_worst" name="texture_worst" required>
+            </div>
+            <div>
+                <label for="perimeter_worst">Perímetro peor:</label>
+                <input type="text" id="perimeter_worst" name="perimeter_worst" required>
+            </div>
+            <div>
+                <label for="area_worst">Área peor:</label>
+                <input type="text" id="area_worst" name="area_worst" required>
+            </div>
+            <div>
+                <label for="smoothness_worst">Suavidad peor:</label>
+                <input type="text" id="smoothness_worst" name="smoothness_worst" required>
+            </div>
+            <div>
+                <label for="compactness_worst">Compacidad peor:</label>
+                <input type="text" id="compactness_worst" name="compactness_worst" required>
+            </div>
+            <div>
+                <label for="concavity_worst">Concavidad peor:</label>
+                <input type="text" id="concavity_worst" name="concavity_worst" required>
+            </div>
+            <div>
+                <label for="concave_points_worst">Puntos de concavidad peores:</label>
+                <input type="text" id="concave_points_worst" name="concave_points_worst" required>
+            </div>
+            <div>
+                <label for="symmetry_worst">Simetría peor:</label>
+                <input type="text" id="symmetry_worst" name="symmetry_worst" required>
+            </div>
+            <div>
+                <label for="fractal_dimension_worst">Dimensión fractal peor:</label>
+                <input type="text" id="fractal_dimension_worst" name="fractal_dimension_worst" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <div id="excel" class="tabcontent">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <!-- Este es el campo para subir el archivo Excel -->
+            <input type="file" id="file" name="file" accept=".xlsx">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+        }
+    </script>
+</body>
+</html>
+
