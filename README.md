@@ -10,6 +10,8 @@ La metodología aplicada abarca desde la preparación y normalización de los da
 
 Los resultados obtenidos demuestran que los autoencoders son capaces de distinguir con una precisión significativa entre muestras normales y patológicas, superando en algunos casos a métodos tradicionales de aprendizaje automático. Además, se ha desarrollado una interfaz web para facilitar la visualización de los resultados del modelo, permitiendo una interpretación más intuitiva de los datos. Puedes acceder a ella en https://sanidad.mtcor.es.
 
+Puedes visualizar el notebook [aquí.](https://github.com/MarcoTenCortes/TFG-Autoencoder/blob/main/notebooks/Autoencoder%20para%20clasificaci%C3%B3n%20con%20anomal%C3%ADas.ipynb)
+
 ## Estructura del Repositorio
 
 - `notebooks/`: Contiene los notebooks de Jupyter utilizados durante el desarrollo del proyecto.
@@ -57,7 +59,7 @@ Los resultados obtenidos demuestran que los autoencoders son capaces de distingu
 
 ## Contribuciones
 
-Si deseas contribuir a este proyecto, por favor crea un fork del repositorio y envía un pull request con tus cambios. Agradecemos cualquier tipo de contribución, desde reportes de errores hasta mejoras en la documentación y el código.
+Si deseas contribuir a este proyecto, por favor crea un fork del repositorio y envía un pull request con tus cambios. Se agradece cualquier tipo de contribución, desde reportes de errores hasta mejoras en la documentación y el código.
 
 ## Autor
 
